@@ -1,0 +1,18 @@
+/* PROFILE */
+
+@import "./general.css";
+
+* {
+}
+
+.profile {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 14px;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: left;
+  gap: 14px;
+}

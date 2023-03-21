@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/profile.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+
+    <main>
+      <section class="profile">
+        <img
+          class="profile__picture"
+          src="./assets/user.jpg"
+          alt="drawingOfAProfilePicture"
+        />
+        <p class="profile__name">Max Doe</p>
+      </section>
+
+      <section class="aboutMe">
+        <h2 class="aboutMe__titel">About me</h2>
+        <p class="aboutMe__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Voluptatibus, incidunt sint. Blanditiis assumenda facilis, iusto nihil
+          laboriosam eum saepe, eius sunt impedit fuga cumque. Quia, nulla
+          illum. Magnam, officiis cumque.
+        </p>
+      </section>
+
+      <section class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="./index.html" class="footer__link footer__link--active">
+        ><img src="./assets/home.png" alt="image home"
+      /></a>
+      <a href="./bookmarks.html" class="footer__link"
+        ><img src="./assets/bookmark_transparent.png" alt="image bookmark"
+      /></a>
+      <a href="./profile.html" class="footer__link"
+        ><img src="./assets/profile.png" alt="image profile"
+      /></a>
+    </footer>
+  </body>
+</html>

@@ -1,4 +1,7 @@
-// Read all entered data from the input fields (question, answer, tags)
+/*---------------------------------
+    1. INPUT FIELDS
+---------------------------------*/
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
@@ -8,7 +11,10 @@ form.addEventListener("submit", (event) => {
   const data = Object.fromEntries(formData);
   //console.log(data);
 
-  // Generate all DOM elements for a card with createElement()
+  /*---------------------------------
+    1. DOM ELEMENTS
+---------------------------------*/
+
   const card = document.createElement("section");
   const cardQuestion = document.createElement("h2");
   const cardBookmark = document.createElement("img");
@@ -16,7 +22,10 @@ form.addEventListener("submit", (event) => {
   const cardTagList = document.createElement("ul");
   const cardTag = document.createElement("li");
 
-  //Append the card to the page, directly below the form
+  /*---------------------------------
+    1. APPEND CARD BELOW FORM
+---------------------------------*/
+
   document.body.append(card);
   card.append(cardQuestion);
   card.append(cardBookmark);
@@ -24,7 +33,10 @@ form.addEventListener("submit", (event) => {
   card.append(cardTagList);
   card.append(cardTag);
 
-  // Insert the form's data as text into the DOM elements
+  /*---------------------------------
+    1.INSERT DATA INTO DOM ELEMENTS
+---------------------------------*/
+
   const cardInput = card.value;
   const cardQuestionInput = document.getElementById("question").value;
   const cardShowAnswerInput = document.getElementById("answer").value;
@@ -41,44 +53,35 @@ form.addEventListener("submit", (event) => {
     </section>
     `;
 
-  // Clear input-fields
   form.reset();
 });
 
-// Use the input event to read the length of a field's content and calculate and display the result
-// Think of ways to use the same logic for both form fields and to not repeat your code
+/*---------------------------------
+LENGTH COUNTER
+---------------------------------*/
 
-// Select textarea
 const questionTextAreaElement = document.querySelector("#question");
 const answerTextAreaElement = document.querySelector("#answer");
 
-// Select character counter
 const questionCharacterCounterElement =
   document.querySelector("#question-count");
 const answerCharacterCounterElement = document.querySelector("#answer-count");
 
-// Select element with typed characters
 const questionTypedCharactersElement = document.querySelector("#current");
 const answerTypedCharactersElement = document.querySelector("#currentAnswer");
 
 questionTextAreaElement.addEventListener("input", () => {
-  // Count number of typed characters
   const questionTypedCharacters = questionTextAreaElement.value.length;
-
-  // Display number of typed characters
   questionTypedCharactersElement.textContent = questionTypedCharacters;
 });
 
 answerTextAreaElement.addEventListener("input", () => {
-  // Count number of typed characters
   const answerTypedCharacters = answerTextAreaElement.value.length;
-
-  // Display number of typed characters
   answerTypedCharactersElement.textContent = answerTypedCharacters;
 });
 
 /*---------------------------------
-
+TASK 2
 ---------------------------------*/
 
 console.clear();

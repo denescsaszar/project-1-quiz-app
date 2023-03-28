@@ -1,1 +1,5 @@
-@import "./css/general.css";
+@import "./css/global.css";
+@import "./css/index.css";
+@import "./css/profile.css";
+@import "./css/components.css";
+@import "./css/utilities.css";

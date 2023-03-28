@@ -13,19 +13,45 @@
       <h1>Quiz App</h1>
     </header>
     <main>
+      <!-- CARD 1 -->
+
       <section class="question-card">
+        <!-- BOOKMARK -->
+
         <img
-          class="question-card__icon question-card__icon--active selected"
-          src="./assets/bookmark_filled.png"
-          alt="bookmark filled"
+          id="question-card__button"
+          class="question-card__icon"
+          src="./assets/bookmark.png"
+          alt="bookmark"
           data-js="bookmark-button"
         />
-        <h2 class="question-card__question">Why is accessibility important?</h2>
-        <button class="question-card__button">show answer</button>
-        <p class="question-card__answer"></p>
+
+        <!-- QUESTION -->
+
+        <h2 class="question-card__title" data-js="">
+          What property flips the axes of flexbox
+        </h2>
+
+        <!-- SHOW BUTTON -->
+
+        <button class="question-card__button" data-js="show-answer-button">
+          show answer
+        </button>
+
+        <!-- ANSWER -->
+
+        <p class="question-card__answer hidden" data-js="answer">
+          The flex-direction property is a sub-property of the Flexible Box
+          Layout module. It establishes the main-axis, thus defining the
+          direction flex items are placed in the flex container.
+        </p>
+
+        <!-- TAGS -->
+
         <div class="question-card__tags">
           <div class="question-card__tag">#html</div>
-          <div class="question-card__tag">#accessibility</div>
+          <div class="question-card__tag">#css</div>
+          <div class="question-card__tag">#flexbox</div>
         </div>
       </section>
     </main>

@@ -22,6 +22,7 @@
 .question-card__tags {
   display: flex;
   margin-top: 20px;
+  width: 100%;
 }
 
 .question-card__tag {

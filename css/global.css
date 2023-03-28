@@ -16,6 +16,7 @@ body {
 h1 {
   margin: 0;
   font-size: var(--fs-600);
+  text-align: center;
 }
 
 header,
@@ -70,9 +71,9 @@ section {
   align-items: center;
 }
 
-.footer__link.footer__link--active {
+/* .footer__link.footer__link--active {
   background-color: #f9f5eb;
-}
+} */
 
 .hidden {
   display: none;

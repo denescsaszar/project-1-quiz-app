@@ -39,21 +39,13 @@ console.log(showAnswerButtons);
 
 for (let i = 0; i < showAnswerButtons.length; i++) {
   const showAnswerButton = showAnswerButtons[i];
-  showAnswerButton.addEventListener("click", () => {
+  showAnswerButton.addEventListener("click", (event) => {
+    console.dir(event.target);
     answers[i].classList.toggle("hidden");
+    if (event.target.textContent === "hide answer") {
+      event.target.textContent = "show answer";
+    } else {
+      event.target.textContent = "hide answer";
+    }
   });
 }
-
-// const buttons = document.querySelectorAll(".btn");
-
-// const buttonsHTML = document.getElementsByClassName(".btn");
-
-// console.log(buttons);
-// console.log(buttonsHTML);
-
-// buttons.forEach(button, index) => {
-//   button.addEventListener("click", (event) => {
-//   console.log(event, target, index);
-//   });
-
-// }

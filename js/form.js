@@ -16,11 +16,22 @@ form.addEventListener("submit", (event) => {
 ---------------------------------*/
 
   const card = document.createElement("section");
+  // card.classList.add("question-card");
+
   const cardQuestion = document.createElement("h2");
+  // card.classList.add("question-card__title");
+
   const cardBookmark = document.createElement("img");
+  // card.classList.add("question-card__icon");
+
   const cardShowAnswer = document.createElement("p");
-  const cardTagList = document.createElement("ul");
-  const cardTag = document.createElement("li");
+  // card.classList.add("question-card__answer hidden");
+
+  const cardTagList = document.createElement("button");
+  // card.classList.add("question-card__button");
+
+  const cardTag = document.createElement("tags");
+  // card.classList.add("question-card__");
 
   /*---------------------------------
     1. APPEND CARD BELOW FORM
